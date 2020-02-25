@@ -5,14 +5,23 @@ var divPicture;
 //declare HTMl elements binding
 
 //wait for document load
-window.addEventListener('load',Initialize);
+window.addEventListener("load",Initialize);
 
 /**
  * initialiseer de nodige element(en)
  */
 function Initialize()
 {
-    
+    divPicture = document.getElementById("divPicture");
+    let imgs = divPicture.getElementsByTagName("img");
+    for(let i = 0;i < imgs.length;i++)
+    {
+        imgs[i].addEventListener("mouseover",ShowPieceOfRick);
+        imgs[i].addEventListener("mouseout",HidePieceOfRick);
+        imgs[i].addEventListener("click",FixPieceOfRick);
+        imgs[i].addEventListener("dblclick",ReactivatePieceOfRick);
+    }
+    //document.getElementById("pos1").src = `img/${this.id}.jpg`;
 }
 
 /**
@@ -21,7 +30,7 @@ function Initialize()
  */
 function ShowPieceOfRick()
 {
-   
+    this.src = `img/${this.id}.jpg`;
 }
 
 /**
@@ -30,7 +39,7 @@ function ShowPieceOfRick()
  */
 function HidePieceOfRick()
 {
-   
+    this.src = "";
 }
 /**
  * deze functie moet een stukje rick vastzetten
@@ -38,7 +47,8 @@ function HidePieceOfRick()
  */
 function FixPieceOfRick()
 {
-    
+    this.removeEventListener("mouseover",ShowPieceOfRick);
+    this.removeEventListener("mouseout",HidePieceOfRick);
 }
 /**
  * deze functie moet een stukje Rick weer losmaken
@@ -46,7 +56,9 @@ function FixPieceOfRick()
  */
 function ReactivatePieceOfRick()
 {
-    
+    this.src = "";
+    this.addEventListener("mouseover",ShowPieceOfRick);
+    this.addEventListener("mouseout",HidePieceOfRick);
 }
 
 
