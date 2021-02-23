@@ -5,6 +5,7 @@ een stukje van de foto moeten inladen.<br> De img's hiervoor vind je terug in de
 Wanneer de muisaanwijzer over een bepaalde div gaat wordt een stukje van de foto ingeladen. Wanneer de muisaanwijzer de div verlaat 
 verdwijnt het stukje foto opnieuw. Bij een enkele muisklik op een div wordt het stukje fotovastgezet.<br>
 Een dubbele klik zorgt ervoor dat de foto opnieuw reageert op de voorgaande events.<br>
-Gebruik een lus om de eventhandlers toe te voegen!
+Gebruik een lus om de eventhandlers toe te voegen!<br>
+lees de tips in de comments!
 
 
