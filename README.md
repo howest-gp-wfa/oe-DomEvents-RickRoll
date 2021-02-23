@@ -1,4 +1,4 @@
-# oe-DomEvents-RickRoll
+# oe-H06-RickRoll
 <h2>Oefening op DOM en events</h2>
 Werk de applicatie verder af.<br> Er zijn 6 div elementen voorzien die elk
 een stukje van de foto moeten inladen.<br> De img's hiervoor vind je terug in de map img.<br>
