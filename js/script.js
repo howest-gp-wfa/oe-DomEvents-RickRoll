@@ -12,41 +12,42 @@ window.addEventListener("load",Initialize);
  */
 function Initialize()
 {
-    
+    //bind vars
+    //use querySelector and queryselector all to 
+    // bind the imgs(first the div then the images)
+
+
+    //loop to add eventlisteners
+    //queryselectorAll returns an array
+   
 }
 
 /**
- * deze functie moet een stukje rick tonen
- * Wanneer we met de muisaanwijzer over een vakje gaan
+ * show a piece of rick by setting the img (use this)
  */
 function ShowPieceOfRick()
 {
-    
+   
 }
 
 /**
- * deze functie moet een stukje Rick weer doen verdwijnen
- * wanneer de muisaanwijzer het vakje verlaat
+ * hide a piece of rick by removing the img(use this)
  */
 function HidePieceOfRick()
 {
     
 }
 /**
- * deze functie moet een stukje rick vastzetten
- * wanneer we 1 muislkik uitvoeren
+ * fix the image
  */
 function FixPieceOfRick()
 {
-
+    
 }
 /**
- * deze functie moet een stukje Rick weer losmaken
- * wanneer we een dubbelle muisklik uitvoeren
+ * reset the mechanism(eventlisteners)
  */
 function ReactivatePieceOfRick()
 {
    
 }
-
-
